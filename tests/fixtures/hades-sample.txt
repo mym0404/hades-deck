@@ -1,0 +1,13 @@
+--- Ending 01 ---
+Persephone: ...I spent many days tending this garden... or nights? Quite difficult to tell the time here.
+Hades: I know. I know, I.... Why have you returned? If Olympus discovers what happened, not even Zeus could stop what would transpire, here!
+Persephone: Though I shall need for you and Zagreus to cooperate with me on a solution.
+Hades: Zagreus? You have already met Persephone, our Queen. I expect for you to show deference to her, at all times!
+Zagreus: What is this strange sensation that I feel? Perhaps it's this deference of which you speak?
+
+--- Inspect House 01 ---
+Storyteller: The House of Hades: That dark and lavishly appointed lair of the Underworld's King is home not just to him, but to his willful progeny.
+Storyteller: A commemorative board adorns one of the stoic walls within the lounging area, celebrating and proclaiming the accomplishments of those who serve Lord Hades best of all.
+Storyteller: The ancient casks of wine hidden within the recesses of the House of Lord Hades contain intoxicating vintage.
+Storyteller: A majestic gilded edifice of Mount Olympus shines brightly even in the dim light of the House of Hades.
+Storyteller: A vast mosaic depicts the Underworld King presiding over the enormity of his domain, whilst its chthonic residents look on in awe.
