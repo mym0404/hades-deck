@@ -1,6 +1,7 @@
 import type { AnkiRow } from "../core/anki.js";
+import { balancedExpansionCards } from "./balanced-cards.js";
 
-export const curatedCards: AnkiRow[] = [
+const coreCuratedCards: AnkiRow[] = [
   {
     Front: "He has domain over the [[wretched]] shades.",
     Back: `비참한, 불쌍한
@@ -482,3 +483,5 @@ obtain, acquire, secure, get
 (매춘 등을) 알선하다`,
   },
 ];
+
+export const curatedCards: AnkiRow[] = [...coreCuratedCards, ...balancedExpansionCards];

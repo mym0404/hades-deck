@@ -78,7 +78,7 @@ describe("validateAnkiRows", () => {
   });
 
   it("keeps the curated deck exportable", () => {
-    expect(curatedCards).toHaveLength(60);
+    expect(curatedCards).toHaveLength(150);
     expect(validateAnkiRows(curatedCards)).toHaveLength(0);
   });
 });
