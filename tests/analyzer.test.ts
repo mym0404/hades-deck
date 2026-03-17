@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import { validateAnkiRows } from "../src/core/anki.js";
 import { rankDialogue, sampleDialogue } from "../src/core/analyzer.js";
 import { parseDialogue } from "../src/core/parser.js";
+import { curatedCards } from "../src/data/curated-cards.js";
 
 const fixturePath = new URL("./fixtures/hades-sample.txt", import.meta.url);
 
@@ -74,5 +75,10 @@ describe("validateAnkiRows", () => {
 
     expect(valid).toHaveLength(0);
     expect(invalid.length).toBeGreaterThan(0);
+  });
+
+  it("keeps the curated deck exportable", () => {
+    expect(curatedCards).toHaveLength(60);
+    expect(validateAnkiRows(curatedCards)).toHaveLength(0);
   });
 });

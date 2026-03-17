@@ -4,8 +4,9 @@ import { dirname } from "node:path";
 
 import { Command } from "commander";
 
-import { buildBatchRows, buildLlmPrompt, validateAnkiRows } from "../core/anki.js";
+import { validateAnkiRows } from "../core/anki.js";
 import { rankDialogue, sampleDialogue } from "../core/analyzer.js";
+import { curatedCards } from "../data/curated-cards.js";
 import { DEFAULT_DIALOGUE_URL, MAX_DEFAULT_CANDIDATES } from "../data/constants.js";
 import { fromCsv, toCsv } from "../lib/csv.js";
 import { loadSourceText } from "../lib/load-source.js";
@@ -82,35 +83,12 @@ program
   });
 
 program
-  .command("prepare-llm")
-  .requiredOption("-i, --input <path>", "Reviewed candidate CSV path")
-  .option("-o, --output <path>", "Batch CSV path", "out/anki-llm-input.csv")
-  .option("-p, --prompt-output <path>", "Prompt file path", "out/anki-batch-prompt.txt")
-  .option("-l, --limit <number>", "Optional top-N subset")
-  .action(async ({ input, output, promptOutput, limit }) => {
-    const content = await readFile(input, "utf8");
-    const rows = fromCsv<Record<string, string>>(content);
-    const selectedRows = rows.slice(0, limit ? Number(limit) : rows.length);
-    const candidates = selectedRows.map((row) => ({
-      headword: row.headword,
-      type: (row.type as "word" | "phrase") ?? "word",
-      lemma: row.lemma,
-      totalScore: Number(row.total_score ?? 0),
-      reasonFlags: (row.reason_flags ?? "").split("|").filter(Boolean),
-      corpusFreq: Number(row.corpus_freq ?? 0),
-      generalFreqRank: Number(row.general_freq_rank ?? -1),
-      cefrLevels: (row.cefr_levels ?? "").split("|").filter(Boolean),
-      sourceSentence: row.source_sentence,
-      sourceClause: row.source_clause,
-      speaker: row.speaker,
-      section: row.section,
-    }));
-
+  .command("export-anki")
+  .option("-o, --output <path>", "Anki CSV path", "cards/hades-anki.csv")
+  .action(async ({ output }) => {
     await ensureParentDirectory(output);
-    await ensureParentDirectory(promptOutput);
-    await writeFile(output, toCsv(buildBatchRows(candidates)), "utf8");
-    await writeFile(promptOutput, buildLlmPrompt(candidates), "utf8");
-    console.log(`Prepared ${candidates.length} candidates for LLM batching.`);
+    await writeFile(output, toCsv(curatedCards), "utf8");
+    console.log(`Exported ${curatedCards.length} curated Anki rows to ${output}`);
   });
 
 program
