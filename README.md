@@ -25,7 +25,7 @@
   <img src="https://img.shields.io/badge/%EB%8B%A8%EC%96%B4%20%EB%B0%B0%EC%B6%9C%EB%A5%A0-%EC%A3%BC%EC%9E%A5%EC%83%81%209900%25-5a1212?style=flat-square" alt="Claim badge" />
   <img src="https://img.shields.io/badge/%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EC%9D%B4%ED%95%B4%EB%8F%84-%EC%9E%90%EA%B8%B0%EC%95%94%EC%8B%9C%20%ED%8F%AC%ED%95%A8-b88a2d?style=flat-square&logoColor=1a0d0d" alt="Story comprehension badge" />
   <img src="https://img.shields.io/badge/%ED%95%98%EB%8D%B0%EC%8A%A4%20%EA%B3%B5%ED%8F%AC-%EB%B3%B5%EC%8A%B5%EC%9C%BC%EB%A1%9C%20%EC%A7%84%EC%95%95-7a1414?style=flat-square" alt="Fear control badge" />
-  <img src="https://img.shields.io/badge/%EC%82%AC%EC%A7%9C%20%EA%B0%95%EC%82%AC%20%ED%92%8D%EB%AF%B8-%EA%B3%BC%EB%8B%A4%ED%95%A8-f0cf72?style=flat-square&logoColor=1a0d0d" alt="Guru badge" />
+  <img src="https://img.shields.io/badge/%EA%B3%BC%EC%9E%89%20%ED%99%95%EC%8B%A0-%EC%A1%B0%EA%B8%88%20%EB%A7%8E%EC%9D%8C-f0cf72?style=flat-square&logoColor=1a0d0d" alt="Confidence badge" />
 </div>
 
 <br />
