@@ -21,6 +21,13 @@
   <img src="https://img.shields.io/badge/filter-B2%20cut%20%2B%20mythic%20bias-cd9f3b?style=for-the-badge&logoColor=1a0d0d" alt="Filter badge" />
 </div>
 
+<div align="center">
+  <img src="https://img.shields.io/badge/%EB%8B%A8%EC%96%B4%20%EB%B0%B0%EC%B6%9C%EB%A5%A0-%EC%A3%BC%EC%9E%A5%EC%83%81%209900%25-5a1212?style=flat-square" alt="Claim badge" />
+  <img src="https://img.shields.io/badge/%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EC%9D%B4%ED%95%B4%EB%8F%84-%EC%9E%90%EA%B8%B0%EC%95%94%EC%8B%9C%20%ED%8F%AC%ED%95%A8-b88a2d?style=flat-square&logoColor=1a0d0d" alt="Story comprehension badge" />
+  <img src="https://img.shields.io/badge/%ED%95%98%EB%8D%B0%EC%8A%A4%20%EA%B3%B5%ED%8F%AC-%EB%B3%B5%EC%8A%B5%EC%9C%BC%EB%A1%9C%20%EC%A7%84%EC%95%95-7a1414?style=flat-square" alt="Fear control badge" />
+  <img src="https://img.shields.io/badge/%EC%82%AC%EC%A7%9C%20%EA%B0%95%EC%82%AC%20%ED%92%8D%EB%AF%B8-%EA%B3%BC%EB%8B%A4%ED%95%A8-f0cf72?style=flat-square&logoColor=1a0d0d" alt="Guru badge" />
+</div>
+
 <br />
 
 <div align="center">
@@ -45,6 +52,27 @@
 > 너무 쉬운 단어는 덜어내고, 신화풍이고 문학적이고 게임 이해에 중요한 것만 골라  
 > Anki 카드 CSV로 정리해 버리는 프로젝트다.
 
+솔직히 말하면 이 프로젝트의 철학은 꽤 단순하다.  
+날 일단 믿어라. 그럼 너는 단어를 쌀 것이다.  
+그리고 단어를 쏟아내기 시작하면, 전에는 그냥 멋있기만 하던 대사가 이제는 의미까지 들리기 시작한다.
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="25%"><strong>증상 1</strong></td>
+      <td align="center" width="25%"><strong>증상 2</strong></td>
+      <td align="center" width="25%"><strong>증상 3</strong></td>
+      <td align="center" width="25%"><strong>증상 4</strong></td>
+    </tr>
+    <tr>
+      <td align="center">대사는 멋있는데 뜻은 안 들어온다.</td>
+      <td align="center">대충 화난 건 알겠는데 왜 화난지 모른다.</td>
+      <td align="center">스토리 이해를 분위기로 때운다.</td>
+      <td align="center">나중에 복습하겠다고 해놓고 아무것도 안 한다.</td>
+    </tr>
+  </table>
+</div>
+
 <div align="center">
   <img src="./assets/readme/official/Hades_PackArt.jpg" width="78%" alt="Hades pack art" />
 </div>
@@ -52,6 +80,12 @@
 ---
 
 ## 이 저장소가 하는 일
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Chakra+Petch&weight=700&size=24&duration=2600&pause=1000&color=F4D06F&center=true&vCenter=true&repeat=true&width=980&height=72&lines=%EC%9D%B4+CSV%EB%8A%94+%EB%8B%A8%EC%88%9C%ED%95%9C+%EB%8D%B1%EC%9D%B4+%EC%95%84%EB%8B%88%EB%8B%A4.;%EC%9D%B4%EA%B1%B4+%EC%98%81%EC%96%B4+Hades%EC%97%90+%EB%8C%80%ED%95%9C+%EB%B3%B4%EB%B3%B5%EC%9D%B4%EB%8B%A4.;%EC%9D%B4%EC%A0%9C+%EB%8B%A8%EC%96%B4%EA%B0%80+%EB%84%88%EB%A5%BC+%EC%B9%98%EB%8A%94+%EA%B2%8C+%EC%95%84%EB%8B%88%EB%9D%BC+%EB%84%A4%EA%B0%80+%EB%8B%A8%EC%96%B4%EB%A5%BC+%EC%B9%9C%EB%8B%A4." alt="Animated slogan" />
+</div>
+
+좋게 말하면 어휘 학습용 파이프라인이고, 더 정확히 말하면 영어 Hades에게 당한 사람이 만든 보복 장치다.
 
 <table>
   <tr>
@@ -86,6 +120,10 @@
 | `src/data/balanced-cards.ts` | 150장 균형판을 만드는 추가 카드 데이터 |
 | `src/core/analyzer.ts` | 대사 후보 추출, 필터링, 점수화 |
 | `src/cli/main.ts` | `rank`, `sample`, `export-anki`, `validate-anki` CLI |
+
+이 파일들을 점잖게 설명하면 “학습 자산”이지만, 좀 더 정직하게 말하면  
+스토리를 가로막던 단어들을 한 장씩 끌어내려 앉히는 장비 세트다.  
+서사가 귓구멍으로 바로 꽂힌다고까지는 못 해도, 적어도 왜 안 들리는지는 빠르게 들통난다.
 
 ---
 
@@ -130,6 +168,27 @@
 
 ## 왜 굳이 Anki냐
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><strong>기존 방식</strong></td>
+      <td align="center"><strong>이 README가 주장하는 방식</strong></td>
+    </tr>
+    <tr>
+      <td align="center">모르면 넘긴다</td>
+      <td align="center">모르면 덱으로 만들어서 끝까지 쫓아간다</td>
+    </tr>
+    <tr>
+      <td align="center">분위기로 이해한 척한다</td>
+      <td align="center">복습으로 분위기와 뜻을 같이 먹는다</td>
+    </tr>
+    <tr>
+      <td align="center">나중에 외우겠다고 말만 한다</td>
+      <td align="center">CSV를 집어넣고 바로 맞는다</td>
+    </tr>
+  </table>
+</div>
+
 <table>
   <tr>
     <td width="50%">
@@ -146,6 +205,10 @@
     </td>
   </tr>
 </table>
+
+스토리가 안 들리는 건 재능의 문제가 아니다.  
+복습 횟수가 아직 오만하지 않아서 그렇다.  
+오늘 `denizen` 하나를 외우면 내일 대사가 한 줄 더 들리고, 한 줄이 더 들리면 그 다음부터는 분위기로 아는 척하기가 조금 어려워진다.
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Chakra+Petch&weight=700&size=22&duration=3200&pause=1200&color=E8C25B&center=true&vCenter=true&repeat=true&width=980&height=70&lines=%EC%8A%A4%ED%86%A0%EB%A6%AC%EA%B0%80+%EC%95%88+%EB%93%A4%EC%96%B4%EC%98%A4%EB%A9%B4+%EB%8B%A8%EC%96%B4%EB%B6%80%ED%84%B0+%EC%A0%95%EB%A6%AC%ED%95%9C%EB%8B%A4.;%EB%8B%A8%EC%96%B4%EA%B0%80+%EC%A0%95%EB%A6%AC%EB%90%98%EB%A9%B4+%EB%8C%80%EC%82%AC%EA%B0%80+%EB%93%A4%EB%A6%B0%EB%8B%A4.;%EB%8C%80%EC%82%AC%EA%B0%80+%EB%93%A4%EB%A6%AC%EB%A9%B4+%EB%93%9C%EB%94%94%EC%96%B4+%EB%82%B4%EA%B0%80+%EC%95%88+%EB%A7%9E%EB%8A%94%EB%8B%A4." alt="Animated quote" />
@@ -183,11 +246,16 @@ flowchart LR
 
 ## 어떻게 쓰는가
 
+비법처럼 보일 수 있지만 실제 과정은 단순하다.  
+CSV를 넣고, 맞고, 다시 본다.  
+하데스는 너를 막지 않는다. 네 단어장이 빈약한 상태로 들어오는 걸 비웃을 뿐이다.
+
 1. [균형판 CSV](./cards/hades-anki.csv) 또는 [raw 다운로드 링크](https://raw.githubusercontent.com/mym0404/hades-deck/main/cards/hades-anki.csv)로 파일을 받는다.
 2. Anki에서 `파일 가져오기`로 `cards/hades-anki.csv`를 넣는다.
 3. Hades를 영어로 켠다.
 4. 다시 단어에게 맞는다.
-5. 이번에는 복습으로 반격한다.
+5. 하지만 이번엔 속수무책이 아니다.
+6. 복습이 쌓이면 어느 순간 README가 했던 헛소리가 조금은 사실처럼 느껴진다.
 
 ---
 
@@ -227,11 +295,16 @@ pnpm cli validate-anki --input cards/hades-anki.csv
   </tr>
 </table>
 
+처음엔 반신반의해도 괜찮다.  
+`chthonic`을 외운 뒤에도 여전히 모르는 단어는 남아 있을 것이다.  
+다만 그때부터는 도망치는 대신 목록을 늘리게 된다. 이 README가 떠드는 톤은 과하지만, 그 방향성만큼은 의외로 멀쩡하다.
+
 ---
 
 ## 출처
 
 - 카드 대상 대사는 Hades 대사 텍스트를 기반으로 분석했다.
+- 원본 대사 소스 `@All.txt`: [https://raw.githubusercontent.com/Denperidge/Hades-Dialogues/refs/heads/main/docs/en/%40All.txt](https://raw.githubusercontent.com/Denperidge/Hades-Dialogues/refs/heads/main/docs/en/%40All.txt)
 - README 시각 자산은 [Supergiant Games의 Hades 공식 페이지](https://www.supergiantgames.com/games/hades/)에서 제공되는 공식 미디어 자산을 사용했다.
 - 이 저장소의 최종 목표는 Hades를 영어로 즐기되, 모르는 단어 때문에 스토리가 증발하지 않게 만드는 것이다.
 
